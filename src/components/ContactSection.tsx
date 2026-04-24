@@ -1,6 +1,6 @@
 export function ContactSection() {
   return (
-    <section id="contact" className="space-y-6 pb-20">
+    <section id="contact" className="space-y-6 pb-20" data-contact="mail-only">
       <h2 className="section-title">联系方式</h2>
       <p className="section-copy">
       全职机会、合作共创，或是内容传播相关的交流，期待碰撞～
