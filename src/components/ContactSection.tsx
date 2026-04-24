@@ -1,5 +1,3 @@
-const LINKEDIN_URL = "https://www.linkedin.com/in/qiqi-mi-043259167/";
-
 export function ContactSection() {
   return (
     <section id="contact" className="space-y-6 pb-20">
@@ -15,7 +13,7 @@ export function ContactSection() {
           发送邮件
         </a>
         <a
-          href={LINKEDIN_URL}
+          href="https://www.linkedin.com/in/qiqi-mi-043259167/"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center rounded-full border border-sky-200 bg-white px-6 py-3 font-semibold text-sky-700 transition hover:border-sky-300 hover:bg-sky-50"

@@ -4,6 +4,9 @@ import { ExperienceSection } from "@/components/ExperienceSection";
 import { ProjectsSection } from "@/components/ProjectsSection";
 import { SideNav } from "@/components/SideNav";
 
+/** 避免首页被长期静态缓存，线上仍显示旧版（含旧领英链接） */
+export const dynamic = "force-dynamic";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-[radial-gradient(circle_at_5%_5%,#ecfeff_0%,#f0f9ff_38%,#fdf4ff_100%)] text-slate-900">
