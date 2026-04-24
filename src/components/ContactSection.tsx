@@ -1,8 +1,4 @@
-import { connection } from "next/server";
-
-/** 强制按请求渲染，避免线上仍使用构建期预渲染的旧版联系方式（含已删除的按钮） */
-export async function ContactSection() {
-  await connection();
+export function ContactSection() {
   return (
     <section id="contact" className="space-y-6 pb-20" data-contact="mail-only">
       <h2 className="section-title">联系方式</h2>
