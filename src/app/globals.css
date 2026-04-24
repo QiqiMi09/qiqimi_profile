@@ -65,3 +65,12 @@ article {
     0 8px 30px rgba(15, 23, 42, 0.06),
     inset 0 1px 0 rgba(255, 255, 255, 0.65);
 }
+
+/* 全局禁选中文本时，外链/邮件需可正常点击（避免部分浏览器下命中异常） */
+a[href^="http://"],
+a[href^="https://"],
+a[href^="mailto:"] {
+  -webkit-user-select: auto;
+  user-select: auto;
+  cursor: pointer;
+}

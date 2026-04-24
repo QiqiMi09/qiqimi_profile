@@ -1,4 +1,4 @@
-import { LinkedInButton } from "@/components/LinkedInButton";
+const LINKEDIN_URL = "https://www.linkedin.com/in/qiqi-mi-043259167/";
 
 export function ContactSection() {
   return (
@@ -14,7 +14,14 @@ export function ContactSection() {
         >
           发送邮件
         </a>
-        <LinkedInButton className="inline-flex items-center rounded-full border border-sky-200 bg-white px-6 py-3 font-semibold text-sky-700 transition hover:border-sky-300 hover:bg-sky-50" />
+        <a
+          href={LINKEDIN_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center rounded-full border border-sky-200 bg-white px-6 py-3 font-semibold text-sky-700 transition hover:border-sky-300 hover:bg-sky-50"
+        >
+          领英
+        </a>
       </div>
     </section>
   );

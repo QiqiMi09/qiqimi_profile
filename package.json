@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "vercel": "node ./node_modules/vercel/dist/vc.js",
+    "vercel:prod": "node ./node_modules/vercel/dist/vc.js --prod"
   },
   "dependencies": {
     "next": "^16.2.3",
@@ -14,6 +16,7 @@
     "react-dom": "^19.2.5"
   },
   "devDependencies": {
+    "vercel": "^52.0.0",
     "@tailwindcss/postcss": "^4.2.2",
     "@types/node": "^25.6.0",
     "@types/react": "^19.2.14",
